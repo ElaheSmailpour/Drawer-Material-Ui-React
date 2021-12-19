@@ -1,14 +1,15 @@
 import { AppBar, Badge, Box, Button, IconButton, Menu, MenuItem, Toolbar, Typography, useMediaQuery, useTheme } from "@material-ui/core"
-import { MenuOutlined, ShoppingBasket } from "@material-ui/icons"
+import { MenuOutlined, ShoppingBasket, ShoppingCartRounded } from "@material-ui/icons"
 
 import { React, useState } from 'react';
 import DrawerComponet from "../DrawerComponet";
 
 const Navbar = () => {
+    const theme = useTheme()
     const [anchorEl, setAnchorEl] = useState(null)
     const [openDrawer, setOpenDrawer] = useState(true)
     const matches = useMediaQuery(theme.breakpoints.down("sm"))
-    const theme = useTheme()
+  
     const openMenu = Boolean(anchorEl)
     const handleClick = (e) => {
         setAnchorEl(e.currentTarget)
@@ -26,7 +27,8 @@ const Navbar = () => {
                         {/* logo */}
                         <Box>
                             <IconButton>
-                                <MenuOutlined />
+                                <ShoppingCartRounded/>
+                               
                             </IconButton>
                         </Box>
 

@@ -3,6 +3,7 @@ import { List, ListItem, ListItemIcon, ListItemText, SwipeableDrawer } from "@ma
 import React from "react"
 
 const DrawerComponet = ({openDrawer, setOpenDrawer}) => {
+   
     return (
         <SwipeableDrawer  open={openDrawer} anchor="right" >
        <List>
