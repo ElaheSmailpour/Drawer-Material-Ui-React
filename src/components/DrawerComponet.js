@@ -6,21 +6,21 @@ const DrawerComponet = ({openDrawer, setOpenDrawer}) => {
     return (
         <SwipeableDrawer  open={openDrawer} anchor="right" >
        <List>
-           <ListItem button  divider>
+           <ListItem button  divider onClick={()=>setOpenDrawer=(false)}>
            <ListItemIcon>
                <ListItemText>
                    Men
                </ListItemText>
            </ListItemIcon>
            </ListItem>
-           <ListItem button divider >
+           <ListItem button divider onClick={()=>setOpenDrawer=(false)}>
            <ListItemIcon>
                <ListItemText>
                    Women
                </ListItemText>
            </ListItemIcon>
            </ListItem>
-           <ListItem button divider>
+           <ListItem button divider onClick={()=>setOpenDrawer=(false)}>
            <ListItemIcon>
                <ListItemText>
                    Categories
