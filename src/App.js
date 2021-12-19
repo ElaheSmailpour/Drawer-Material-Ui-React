@@ -1,5 +1,7 @@
 
-import Navbar from "./components/Navbar/Navbar";
+//import Navbar from "./components/Navbar/Navbar";
+
+import Accordion1 from "./pages/Accordion1";
 
 
 function App() {
@@ -7,8 +9,8 @@ function App() {
    
      
         <div >
-          <Navbar/>
-   
+          {/* <Navbar/> */}
+   <Accordion1/>
         </div>
      
 
