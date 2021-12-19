@@ -1,20 +1,21 @@
 
 //import Navbar from "./components/Navbar/Navbar";
 
-import Accordion1 from "./pages/Accordion1";
+//import Accordion1 from "./pages/Accordion1";
 
-
+import BottomNavigation1 from "./pages/BottomNavigation1"
 function App() {
   return (
-   
-     
-        <div >
-          {/* <Navbar/> */}
-   <Accordion1/>
-        </div>
-     
 
-   
+
+    <div >
+      {/* <Navbar/> */}
+      {/* <Accordion1/> */}
+      <BottomNavigation1 />
+    </div>
+
+
+
   );
 }
 export default App;
