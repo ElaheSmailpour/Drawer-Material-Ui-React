@@ -1,5 +1,5 @@
 import { AppBar, Badge, Box, Button, IconButton, Menu, MenuItem, Toolbar, Typography, useMediaQuery, useTheme } from "@material-ui/core"
-import { MenuOutlined, ShoppingBasket, ShoppingCartRounded } from "@material-ui/icons"
+import { MenuOpenSharp, MenuOutlined, ShoppingBasket } from "@material-ui/icons"
 
 import { React, useState } from 'react';
 import DrawerComponet from "../DrawerComponet";
@@ -27,7 +27,7 @@ const Navbar = () => {
                         {/* logo */}
                         <Box>
                             <IconButton>
-                                <ShoppingCartRounded/>
+                                <MenuOpenSharp/>
                                
                             </IconButton>
                         </Box>
@@ -37,7 +37,7 @@ const Navbar = () => {
                             openDrawer={openDrawer} setOpenDrawer={setOpenDrawer}
                         />
                         ) : (
-                            <Box style={{ display: "flex" }}>
+                            <Box style={{ display: "flex"}}>
                                 <Typography style={{ color: "red", cursor: "pointer", marginRight: "20px" }} >Home</Typography>
                                 <Typography style={{ color: "red", cursor: "pointer", marginRight: "20px" }} >Brand</Typography>
                                 <Typography style={{ color: "red", cursor: "pointer", marginRight: "20px" }}
@@ -51,6 +51,7 @@ const Navbar = () => {
                                     anchorEl={anchorEl}
                                     open={openMenu}
                                     onClose={handleClose}
+                                    style={{marginTop:"30px" }}
                                 >
                                     <MenuItem onClick={handleClose}>Men</MenuItem>
                                     <MenuItem onClick={handleClose} >Women</MenuItem>
