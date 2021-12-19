@@ -10,7 +10,7 @@ const Accordion1 = () => {
   }
   return (
     <div style={{ margin: "100px" }}>
-      <Accordion expanded={current === 0} onChange={changeState(0)}>
+      <Accordion expanded={current === 0} onChange={changeState(0)} style={{background:"aqua",fontSize:"30px"}} >
         <AccordionSummary expandIcon={<ExpandMoreOutlined />}>
           <Typography>This ist a First Summary</Typography>
         </AccordionSummary>
@@ -22,7 +22,7 @@ const Accordion1 = () => {
           <Button>Ok</Button>
         </AccordionActions>
       </Accordion>
-      <Accordion expanded={current === 1} onChange={changeState(1)}>
+      <Accordion expanded={current === 1} onChange={changeState(1)} style={{background:"pink",fontSize:"30px"}}>
         <AccordionSummary expandIcon={<ExpandMoreOutlined />}>
           <Typography>This ist a Second Summary</Typography>
         </AccordionSummary>
@@ -34,7 +34,7 @@ const Accordion1 = () => {
           <Button>Ok</Button>
         </AccordionActions>
       </Accordion>
-      <Accordion expanded={current === 2} onChange={changeState(2)}>
+      <Accordion expanded={current === 2} onChange={changeState(2)} style={{background:"yellow",fontSize:"30px"}}>
         <AccordionSummary expandIcon={<ExpandMoreOutlined />}>
           <Typography>This ist a Third Summary</Typography>
         </AccordionSummary>
